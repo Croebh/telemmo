@@ -6,6 +6,7 @@ import {
   pipe,
   toPairs,
   tap,
+  filter,
 } from 'ramda'
 
 import { ObjectId } from 'mongodb'
@@ -23,6 +24,7 @@ export default function call (dao, provider, _, msg) {
     .then(head)
     .then(rejectUndefined(msg, _('You don\'t have any equips yet.')))
     .then(prop('equips'))
+    .then(filter(equip => equip !== null))
     .then(map(models.equips.find))
     .then(equips => dao.character
       .find({ _id: msg.player.currentCharId })
