@@ -6,6 +6,9 @@ export default [
     description: 'The worst weapon in the game, but it\'s a weapon.',
     type: 'weapon',
     tier: 0,
+    attackon: 19,
+    damagevalue: 2 + attacker.level/10,
+    stats: "Str +3",
     bonus: {
       str: 3,
     },
@@ -26,6 +29,9 @@ export default [
     description: 'A blade. Made of leaf.',
     type: 'weapon',
     tier: 0,
+    attackon: 17,
+    damagevalue: 5 + attacker.level/10,
+    stats: "Str +5",
     bonus: {
       str: 5,
     },
@@ -46,6 +52,9 @@ export default [
     description: 'A silver dagger.',
     type: 'weapon',
     tier: 1,
+    attackon: 19,
+    damagevalue: 3 + attacker.level/10,
+    stats: "Str +5",
     bonus: {
       str: 5,
     },
@@ -66,6 +75,9 @@ export default [
     description: 'A really spiky club.',
     type: 'weapon',
     tier: 1,
+    attackon: 17,
+    damagevalue: 10 + attacker.level/10,
+    stats: "Str +10",
     bonus: {
       str: 10,
     },
@@ -86,6 +98,9 @@ export default [
     description: 'It was supposed to be "Vine Whip" but maybe Nintendo would sue us.',
     type: 'weapon',
     tier: 2,
+    attackon: 15,
+    damagevalue: 20 + attacker.level/5,
+    stats: "Str +3",
     bonus: {
       str: 15,
     },
@@ -106,6 +121,9 @@ export default [
     description: 'A scythe once used by a psycho.',
     type: 'weapon',
     tier: 3,
+    attackon: 10,
+    damagevalue: 13 + attacker.level/4,
+    stats: "Str +10",
     bonus: {
       str: 10,
     },
@@ -126,6 +144,9 @@ export default [
     description: 'It\'s shinny and it\'s pointy.',
     type: 'weapon',
     tier: 4,
+    attackon: 18,
+    damagevalue: 30 + attacker.level/4,
+    stats: "Str +17 Con +7 Ref +7 Acc +7",
     bonus: {
       str: 17,
       con: 7,
