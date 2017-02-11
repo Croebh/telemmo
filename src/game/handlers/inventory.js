@@ -42,7 +42,7 @@ export default function call (dao, provider, _, msg) {
         ),
         _('Inventory:\n'),
         equips.map(equip =>
-          `<b>${equip.name}</b> - ${capitalize(equip.type)} tier ${equip.tier}\n<i>${equip.description}</i>\n /use_equip_${equip.id}\n`,
+          `<b>${equip.name}</b> - ${capitalize(equip.type)} tier ${equip.tier}\n<i>${equip.description}</i>\n:dart: ${equip.attackon} | :anger: ${equip.damagevalue} | :arrow_up: ${equip.stats}\n /use_equip_${equip.id}\n`,
         ).join('\n'),
       ].join(''),
     }))
